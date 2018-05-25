@@ -46,7 +46,9 @@ public class PageController {
 //	
 	
 //	@RequestMapping(value="/test/{greeting}")
-//	public ModelAndView test(@PathVariable("greeting")String greeting){ // if you want call this http://localhost:8080/onlineshopping/test/hello
+// 	for making clean url
+//	public ModelAndView test(@PathVariable("greeting")String greeting){ 
+// if you want call this http://localhost:8080/onlineshopping/test/hello
 //		if (greeting == null){
 //			greeting = "Hai, handsome";
 //		} 
@@ -55,6 +57,8 @@ public class PageController {
 //		return mv;
 //	}
 //	
+		
 	
+
 	
 }

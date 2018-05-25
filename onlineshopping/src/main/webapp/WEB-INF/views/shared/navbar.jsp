@@ -14,16 +14,16 @@
 <!--               </a> -->
 <!--             </li> -->
             
-            <li class="nav-item ">
+            <li class="nav-item " id ="home">
               <a class="nav-link" href="${contextRoot}/home ">Home</a>
             </li>
-            <li class="nav-item ">
+            <li class="nav-item " id ="about">
               <a class="nav-link" href="${contextRoot}/about">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id ="ListProducts">
               <a class="nav-link" href="${contextRoot}/ListProducts">View Products</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id ="contact">
               <a class="nav-link" href="${contextRoot}/contact">Contact</a>
             </li>
           </ul>

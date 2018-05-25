@@ -1,9 +1,15 @@
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+<!-- this configuration from mkyong for get a version web-app-->
+<!-- after that, right click on your project -> properties -> project facets -> unselect webdynamic web -> 
+update project
+-->
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"       
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
   <display-name>Archetype Created Web Application</display-name>
+  
   
   <!-- Configuring front-controller -->
   <servlet>
@@ -14,6 +20,7 @@
   
   <servlet-mapping>
   	<servlet-name>dispatcher</servlet-name>
+  	<!-- pola url -->
   	<url-pattern>/</url-pattern>
   </servlet-mapping>
   

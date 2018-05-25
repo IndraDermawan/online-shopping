@@ -23,6 +23,8 @@
    </bean>
    
    <!-- Loading Static Resources -->
+   <!-- for calling beans mvc on top -->
+   
    <mvc:annotation-driven />
    
    <mvc:resources location="/assets/" mapping="/resources/**" />
