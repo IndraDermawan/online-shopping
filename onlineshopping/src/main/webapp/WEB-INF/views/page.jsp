@@ -51,7 +51,7 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap Cyborg Theme-->
-<link href="${css}/bootstrap-cyborg-theme.css" rel="stylesheet">
+<link href="${css}/bootstrap-ubuntu-theme.css" rel="stylesheet">
 
 
 <!-- Custom styles for this template -->
@@ -98,12 +98,17 @@ body {
 
 			<!-- Only when user click About -->
 			<c:if test="${userClickAbout == true}">
-				<%@include file="about.jsp"%>
+				<%@include file="about.jsp"%> <!-- view/shared/about -->
 			</c:if>
 
 			<!-- Only when user click Contact -->
 			<c:if test="${userClickContact == true}">
 				<%@include file="contact.jsp"%>
+			</c:if>
+			
+			<!-- Only when user click All Products or CategoryProducts-->
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+				<%@include file="listProducts.jsp"%>
 			</c:if>
 
 		</div>

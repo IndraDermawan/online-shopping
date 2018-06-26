@@ -15,9 +15,18 @@
 	</properties>
 
 	<dependencies>
+
+		<!-- This is how to link to back end project with pom.xml -->
+		<!-- it's will make some msven dependency shoppingbackend -->
+		<dependency>
+			<groupId>net.kzn</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>		
+		</dependency>
+
 		<!-- JAVA EE API -->
-		
-		<!-- this for solve problem javax.servlet.http.HttpServlet and load maven dependency javaee-->
+		<!-- this for solve problem javax.servlet.http.HttpServlet and load maven 
+			dependency javaee -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
@@ -55,10 +64,10 @@
 
 		<plugins>
 			<!-- Update to lastest java -->
-			<!-- this from effective POM for setting compiler  -->
+			<!-- this from effective POM for setting compiler -->
 			<!-- dont forget for update project -->
 			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId> 
+				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
 				<configuration>
 					<source>1.8</source>
